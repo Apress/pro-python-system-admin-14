@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <exception_types>
+        <exception logline=""
+                   headline=""
+                   body="java.io.FileNotFoundException: .+ \(No such file or directory\)"
+                   group="File not found exception"
+                   desc="File not found exception"
+        />
+        <exception logline=""
+                   headline=""
+                   body="java.io.FileNotFoundException: .+ \(Permission denied\)"
+                   group="Permission denied exception"
+                   desc="Permission denied exception"
+        />
+    </exception_types>
+</config>

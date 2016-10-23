@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+function list_options {
+    echo 'free_pct - Free memory, %'
+    echo 'free - Free memory, in bytes'
+    echo 'used_pct - Used memory, %'
+    echo 'used - Used memory, in bytes'
+    echo 'swap_used_pct - Used swap, %'
+}
+
+if [ $# -eq 0 ]
+then
+    RESULT=$(mpstat|awk '/all/ {print 100-$11}')
+else
+    case $1 in
+        'options')
+                    list_options
+                    exit 0
+                    ;;
+        'free_pct')   
+                    RESULT=$(free|awk '/Mem/ {print $4/$2*100}')
+                    ;;
+        'free')   
+                    RESULT=$(free|awk '/Mem/ {print $4}')
+                    ;;
+        'used_pct')   
+                    RESULT=$(free|awk '/Mem/ {print $3/$2*100}')
+                    ;;
+        'used')   
+                    RESULT=$(free|awk '/Mem/ {print $3}')
+                    ;;
+        'swap_used_pct')
+                    RESULT=$(free|awk '/Swap/ {print $3/$2*100}')
+                    ;;
+        *)
+                    RESULT=$(mpstat|awk '/all/ {print 100-$11}')
+                    ;;
+    esac
+
+fi
+
+echo ${RESULT}
+

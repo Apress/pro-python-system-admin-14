@@ -1,0 +1,30 @@
+<h1>Host details: {{ host[1] }}</h1>
+<h2>Views grouped by the timescales</h2>
+<p>Here you'll find all available probes for this host on the same timescale.</p>
+<ul>
+{% for scale in timescales %}
+<li><a href="hsd_{{ host[0] }}_{{ scale }}.html">{{ scale }} day(s) view</a></li>
+{% endfor %}
+</ul>
+<h2>Views grouped by the probes</h2>
+<p>Here you'll find all available time scale views of the same probe</p>
+<ul>
+{% for probe in host[4] %}
+<li><a href="hpd_{{ probe[0] }}.html">{{ probe[1] }}</a></li>
+{% endfor %}
+</ul>
+<h2>Host statistics</h2>
+<h3>Service availability details</h3>
+{% for probe in probe_sa %}
+<h4>Availability of the "{{ probe }}" check</h4>
+<ul>
+{% for scale in probe_sa[probe] %}
+<li>On a {{ scale }} day(s) scale:
+    <ul>
+        <li>Warning: {{ probe_sa[probe][scale][0]|round(3) }}%</li>
+        <li>Error: {{ probe_sa[probe][scale][1]|round(3) }}%</li>
+    </ul>
+</li>
+{% endfor %}
+</ul>
+{% endfor %}

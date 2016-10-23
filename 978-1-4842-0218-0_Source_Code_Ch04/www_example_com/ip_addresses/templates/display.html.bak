@@ -1,0 +1,29 @@
+{% if parent %}
+<h1>Current address: {{ parent.address }}/{{ parent.network_size }}</h1>
+<h2><a href="../../{% if parent.parent %}{{ parent.parent.address }}/{{ parent.parent.network_size }}/{% endif %}">Go back</a></h2>
+{% else %}
+<h1>At the top of the networks tree</h1>
+{% endif %}
+
+{% if addresses_list %}
+    <ul>
+    {% for address in addresses_list %}
+        <li><a href="{% if parent %}../../{% endif %}{{ address.address }}/{{ address.network_size }}{% ifequal address.network_size 32 %}/modify/{% endifequal %}">{{ address.address }}/{{ address.network_size }}
+           </a>
+            {% ifequal address.network_size 32 %}(host){% else %}(network){% endifequal %}
+            {{ address.description }}
+            (<a href="{% if parent %}../../{% endif %}{{ address.address }}/{{ address.network_size }}/delete/">delete</a> |
+            <a href="{% if parent %}../../{% endif %}{{ address.address }}/{{ address.network_size }}/modify/">modify</a>)
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+{% ifequal parent.network_size 32 %}
+This is a node IP
+ 
+{% else %}
+No addresses or subnets in this range
+{% endifequal %}
+{% endif %}
+<h2><a href="add/">Add new subnet or node IP</a></h2>
+

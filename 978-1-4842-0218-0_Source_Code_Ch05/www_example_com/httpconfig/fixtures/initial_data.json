@@ -1,0 +1,683 @@
+[
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       1,
+        "fields":   {
+                        "name":   "AcceptPathInfo",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#AcceptPathInfo",
+                        "is_container":     "False"
+                    }
+    },
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       2,
+        "fields":   {
+                        "name":   "AccessFileName",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#AccessFileName",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       3,
+        "fields":   {
+                        "name":   "AddDefaultCharset",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#AddDefaultCharset",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       4,
+        "fields":   {
+                        "name":   "AddOutputFilterByType",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#AddOutputFilterByType",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       5,
+        "fields":   {
+                        "name":   "AllowEncodedSlashes",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#AllowEncodedSlashes",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       6,
+        "fields":   {
+                        "name":   "AllowOverride",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#AllowOverride",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       7,
+        "fields":   {
+                        "name":   "AuthName",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#AuthName",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       8,
+        "fields":   {
+                        "name":   "AuthType",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#AuthType",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       9,
+        "fields":   {
+                        "name":   "CGIMapExtension",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#CGIMapExtension",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       10,
+        "fields":   {
+                        "name":   "ContentDigest",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ContentDigest",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       11,
+        "fields":   {
+                        "name":   "DefaultType",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#DefaultType",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       12,
+        "fields":   {
+                        "name":   "<Directory>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#Directory",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       13,
+        "fields":   {
+                        "name":   "<DirectoryMatch>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#DirectoryMatch",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       14,
+        "fields":   {
+                        "name":   "DocumentRoot",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#DocumentRoot",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       15,
+        "fields":   {
+                        "name":   "EnableMMAP",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#EnableMMAP",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       16,
+        "fields":   {
+                        "name":   "EnableSendfile",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#EnableSendfile",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       17,
+        "fields":   {
+                        "name":   "ErrorDocument",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ErrorDocument",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       18,
+        "fields":   {
+                        "name":   "ErrorLog",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ErrorLog",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       19,
+        "fields":   {
+                        "name":   "FileETag",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#FileETag",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       20,
+        "fields":   {
+                        "name":   "<Files>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#Files",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       21,
+        "fields":   {
+                        "name":   "<FilesMatch>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#FilesMatch",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       22,
+        "fields":   {
+                        "name":   "ForceType",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ForceType",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       23,
+        "fields":   {
+                        "name":   "HostnameLookups",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#HostnameLookups",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       24,
+        "fields":   {
+                        "name":   "IdentityCheck",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#IdentityCheck",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       25,
+        "fields":   {
+                        "name":   "<IfDefine>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#IfDefine",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       26,
+        "fields":   {
+                        "name":   "<IfModule>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#IfModule",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       27,
+        "fields":   {
+                        "name":   "Include",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#Include",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       28,
+        "fields":   {
+                        "name":   "KeepAlive",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#KeepAlive",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       29,
+        "fields":   {
+                        "name":   "KeepAliveTimeout",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#KeepAliveTimeout",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       30,
+        "fields":   {
+                        "name":   "<Limit>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#Limit",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       31,
+        "fields":   {
+                        "name":   "<LimitExcept>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#LimitExcept",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       32,
+        "fields":   {
+                        "name":   "LimitInternalRecursion",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#LimitInternalRecursion",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       33,
+        "fields":   {
+                        "name":   "LimitRequestBody",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#LimitRequestBody",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       34,
+        "fields":   {
+                        "name":   "LimitRequestFields",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#LimitRequestFields",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       35,
+        "fields":   {
+                        "name":   "LimitRequestFieldSize",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#LimitRequestFieldSize",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       36,
+        "fields":   {
+                        "name":   "LimitRequestLine",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#LimitRequestLine",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       37,
+        "fields":   {
+                        "name":   "LimitXMLRequestBody",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#LimitXMLRequestBody",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       38,
+        "fields":   {
+                        "name":   "<Location>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#Location",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       39,
+        "fields":   {
+                        "name":   "<LocationMatch>",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#LocationMatch",
+                        "is_container":     "True"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       40,
+        "fields":   {
+                        "name":   "LogLevel",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#LogLevel",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       41,
+        "fields":   {
+                        "name":   "MaxKeepAliveRequests",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#MaxKeepAliveRequests",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       42,
+        "fields":   {
+                        "name":   "NameVirtualHost",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#NameVirtualHost",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       43,
+        "fields":   {
+                        "name":   "Options",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#Options",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       44,
+        "fields":   {
+                        "name":   "Require",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#Require",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       45,
+        "fields":   {
+                        "name":   "RLimitCPU",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#RLimitCPU",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       46,
+        "fields":   {
+                        "name":   "RLimitMEM",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#RLimitMEM",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       47,
+        "fields":   {
+                        "name":   "RLimitNPROC",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#RLimitNPROC",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       48,
+        "fields":   {
+                        "name":   "Satisfy",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#Satisfy",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       49,
+        "fields":   {
+                        "name":   "ScriptInterpreterSource",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ScriptInterpreterSource",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       50,
+        "fields":   {
+                        "name":   "ServerAdmin",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ServerAdmin",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       51,
+        "fields":   {
+                        "name":   "ServerAlias",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ServerAlias",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       52,
+        "fields":   {
+                        "name":   "ServerName",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ServerName",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       53,
+        "fields":   {
+                        "name":   "ServerPath",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ServerPath",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       54,
+        "fields":   {
+                        "name":   "ServerRoot",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ServerRoot",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       55,
+        "fields":   {
+                        "name":   "ServerSignature",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ServerSignature",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       56,
+        "fields":   {
+                        "name":   "ServerTokens",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#ServerTokens",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       57,
+        "fields":   {
+                        "name":   "SetHandler",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#SetHandler",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       58,
+        "fields":   {
+                        "name":   "SetInputFilter",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#SetInputFilter",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       59,
+        "fields":   {
+                        "name":   "SetOutputFilter",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#SetOutputFilter",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       60,
+        "fields":   {
+                        "name":   "TimeOut",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#TimeOut",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       61,
+        "fields":   {
+                        "name":   "TraceEnable",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#TraceEnable",
+                        "is_container":     "False"
+                    }
+    },
+
+
+    {
+        "model":    "httpconfig.configdirective",
+        "pk":       62,
+        "fields":   {
+                        "name":   "UseCanonicalName",
+                        "documentation":    "http://httpd.apache.org/docs/2.0/mod/core.html#UseCanonicalName",
+                        "is_container":     "False"
+                    }
+    }
+
+]

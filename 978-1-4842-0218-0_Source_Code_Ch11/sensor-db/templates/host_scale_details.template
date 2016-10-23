@@ -1,0 +1,7 @@
+<h1>Host: {{ host[1] }}</h1>
+<h2>Scale: {{ scale }} day(s)</h2>
+
+{% for image in images %}
+<h3>{{ image[0] }}</h3>
+<img src="{{ image[1] }}" />
+{% endfor %}

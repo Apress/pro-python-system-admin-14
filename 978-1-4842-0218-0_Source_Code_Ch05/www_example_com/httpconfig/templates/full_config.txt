@@ -1,0 +1,22 @@
+# Virtual host configuration section
+# automatically generated - do not edit
+
+{% for vhost in vhosts %}
+
+##
+## {{ vhost.vhost_data.description }}
+##
+{% if vhost.vhost_data.is_template %}#{% endif %} <VirtualHost {{ vhost.vhost_data.bind_address }}>
+{% if vhost.vhost_data.is_template %}#{% endif %}    {% for orphan_directive in vhost.orphan_directives %}
+{% if vhost.vhost_data.is_template %}#{% endif %}      {{ orphan_directive }}
+{% if vhost.vhost_data.is_template %}#{% endif %}    {% endfor %}
+{% if vhost.vhost_data.is_template %}#{% endif %}    {% for container in vhost.containers %}
+{% if vhost.vhost_data.is_template %}#{% endif %}      {{ container.parent|safe }}
+{% if vhost.vhost_data.is_template %}#{% endif %}        {% for child_dir in container.children %}
+{% if vhost.vhost_data.is_template %}#{% endif %}          {{ child_dir }}
+{% if vhost.vhost_data.is_template %}#{% endif %}        {% endfor %}
+{% if vhost.vhost_data.is_template %}#{% endif %}      {{ container.parent.close_tag|safe }}
+{% if vhost.vhost_data.is_template %}#{% endif %}    {% endfor %}
+{% if vhost.vhost_data.is_template %}#{% endif %}  </VirtualHost>
+
+{% endfor %}

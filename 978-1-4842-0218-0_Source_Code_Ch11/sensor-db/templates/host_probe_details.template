@@ -1,0 +1,9 @@
+<h1>Host: {{ host[1] }}</h1>
+<h2>Probe: {{ probe[1] }}</h2>
+
+{% for image in images %}
+<h3>Time scale: {{ image[0] }} day(s)</h3>
+
+<img src="{{ image[1] }}" />
+
+{% endfor %}

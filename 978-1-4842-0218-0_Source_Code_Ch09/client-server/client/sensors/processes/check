@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+function list_options {
+    echo 'load1 - Load average, 1 min'
+    echo 'load5 - Load average, 5 min'
+    echo 'load15 - Load average, 15 min'
+    echo 'running - Number of running processes'
+    echo 'total - Total number of processes'
+}
+
+if [ $# -eq 0 ]
+then
+    RESULT=$(awk '{print $1}' /proc/loadavg)
+else
+    case $1 in
+        'options')
+                    list_options
+                    exit 0
+                    ;;
+        'load1')   
+                    RESULT=$(awk '{print $1}' /proc/loadavg)
+                    ;;
+        'load5')   
+                    RESULT=$(awk '{print $2}' /proc/loadavg)
+                    ;;
+        'load15')   
+                    RESULT=$(awk '{print $3}' /proc/loadavg)
+                    ;;
+        'running')   
+                    RESULT=$(awk '{print $4}' /proc/loadavg|awk -F / '{print $1}')
+                    ;;
+        'total')
+                    RESULT=$(awk '{print $4}' /proc/loadavg|awk -F / '{print $2}')
+                    ;;
+        *)
+                    RESULT=$(awk '{print $1}' /proc/loadavg)
+                    ;;
+    esac
+
+fi
+
+echo ${RESULT}
+

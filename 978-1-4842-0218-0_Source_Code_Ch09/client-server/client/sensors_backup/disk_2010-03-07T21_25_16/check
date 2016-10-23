@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+function list_options {
+    echo 'percent <vol> - free space %'
+    echo 'used <vol> - used in KB'
+    echo 'free <vol> - free in KB'
+}
+
+# Filesystem         1024-blocks      Used Available Capacity Mounted on
+# /dev/mapper/vg_fedolin-lv_root  36220536  32341148   3511840      91% /
+# /dev/sda1               198337     64021    124076      35% /boot
+
+if [ $# -ne 2 ]
+then
+    list_options
+else
+    case $1 in
+        'options')
+                    list_options
+                    exit 0
+                    ;;
+        'percent')   
+                    RESULT=$(df -kP $2|awk '/%/ {sub(/%/, "", $5); print $5}')
+                    ;;
+        'used')
+                    RESULT=$(df -kP $2|awk '/%/ {print $3}')
+                    ;;
+        'free')
+                    RESULT=$(df -kP $2|awk '/%/ {print $4}')
+                    ;;
+        *)
+                    RESULT=$(df -kP --total|awk '/total/ {sub(/%/, "", $5); print $5}')
+                    ;;
+    esac
+
+fi
+
+echo ${RESULT}
+

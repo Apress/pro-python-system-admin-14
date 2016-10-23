@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+function list_options {
+    echo 'idle - Idle CPU %'
+    echo 'used - Total CPU used % '
+    echo 'user - CPU performing user tasks %'
+    echo 'system - CPU performing system tasks %'
+    echo 'iowait - CPU in IO wait state %'
+}
+
+#08:22:33 PM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest   %idle
+#08:22:33 PM  all    2.02    0.04    1.20    1.19    0.01    0.01    0.00    0.00   95.54
+
+if [ $# -eq 0 ]
+then
+    RESULT=$(mpstat|awk '/all/ {print 100-$12}')
+else
+    case $1 in
+        'options')
+                    list_options
+                    exit 0
+                    ;;
+        'used')   
+                    RESULT=$(mpstat|awk '/all/ {print 100-$12}')
+                    ;;
+        'idle')
+                    RESULT=$(mpstat|awk '/all/ {print $12}')
+                    ;;
+        'user')
+                    RESULT=$(mpstat|awk '/all/ {print $4}')
+                    ;;
+        'system')
+                    RESULT=$(mpstat|awk '/all/ {print $6}')
+                    ;;
+        'iowait')
+                    RESULT=$(mpstat|awk '/all/ {print $7}')
+                    ;;
+        *)
+                    RESULT=$(mpstat|awk '/all/ {print 100-$12}')
+                    ;;
+    esac
+
+fi
+
+echo ${RESULT}
+
